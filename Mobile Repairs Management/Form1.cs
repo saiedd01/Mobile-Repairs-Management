@@ -16,5 +16,10 @@ namespace Mobile_Repairs_Management
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
