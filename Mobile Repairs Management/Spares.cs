@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Mobile_Repairs_Management
 {
-    public partial class Form1 : Form
+    public partial class Spares : Form
     {
-        public Form1()
+        public Spares()
         {
             InitializeComponent();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
