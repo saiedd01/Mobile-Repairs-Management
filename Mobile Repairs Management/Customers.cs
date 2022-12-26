@@ -26,6 +26,14 @@ namespace Mobile_Repairs_Management
             Customerlist.DataSource = con.GetData(Query);
         }
 
+        private void clear()
+        {
+            CustNameTb.Text = "";
+            CustAddTb.Text = "";
+            CustPhoneTb.Text = "";
+            key = 0;
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -92,6 +100,7 @@ namespace Mobile_Repairs_Management
                     con.SetData(Query);
                     MessageBox.Show("Customer Updated !!!!");
                     ShowCustomer();
+                    clear();
                 }
                 catch (Exception Ex)
                 {
@@ -115,6 +124,7 @@ namespace Mobile_Repairs_Management
                     con.SetData(Query);
                     MessageBox.Show("Customer Deleted !!!!");
                     ShowCustomer();
+                    clear();
                 }
                 catch (Exception Ex)
                 {
