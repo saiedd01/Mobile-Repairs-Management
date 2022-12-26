@@ -70,7 +70,7 @@ namespace Mobile_Repairs_Management
                 {
                     String PName = PartNameTb.Text;
                     int PCost = Convert.ToInt32(PartCostTb.Text);
-                    String Query = "Update SpareTbl set SpName = '{0}', SpCost = {1} where SpCode ={2} )";
+                    String Query = "Update SpareTbl set SpName = '{0}', SpCost = {1} where SpCode ={2}";
                     Query = String.Format(Query, PName, PCost , key);
                     con.SetData(Query);
                     MessageBox.Show("Spare Updated !!!!");
@@ -98,6 +98,30 @@ namespace Mobile_Repairs_Management
                 key = Convert.ToInt32(Partlist.SelectedRows[0].Cells[0].Value.ToString());
             }
 
+        }
+
+        private void DeleteBtn_Click(object sender, EventArgs e)
+        {
+            if (key == 0)
+            {
+                MessageBox.Show("Select Spare");
+            }
+            else
+            {
+                try
+                {
+                    String Query = "Delete from SpareTbl where SpCode = {0}";
+                    Query = String.Format(Query, key);
+                    con.SetData(Query);
+                    MessageBox.Show("Spare Deleted !!!!");
+                    ShowPart();
+                    clear();
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show(Ex.Message);
+                }
+            }
         }
     }
 }
