@@ -31,16 +31,15 @@ namespace Mobile_Repairs_Management
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Repairs));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.DeleteBtn = new System.Windows.Forms.Button();
-            this.UpdateBtn = new System.Windows.Forms.Button();
             this.SaveBtn = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -111,33 +110,22 @@ namespace Mobile_Repairs_Management
             // 
             this.DeleteBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(203)))), ((int)(((byte)(66)))));
             this.DeleteBtn.Font = new System.Drawing.Font("Trebuchet MS", 14F);
-            this.DeleteBtn.Location = new System.Drawing.Point(173, 716);
+            this.DeleteBtn.Location = new System.Drawing.Point(268, 684);
             this.DeleteBtn.Name = "DeleteBtn";
-            this.DeleteBtn.Size = new System.Drawing.Size(132, 43);
+            this.DeleteBtn.Size = new System.Drawing.Size(132, 61);
             this.DeleteBtn.TabIndex = 36;
             this.DeleteBtn.Text = "Delete";
             this.DeleteBtn.UseVisualStyleBackColor = false;
-            // 
-            // UpdateBtn
-            // 
-            this.UpdateBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(178)))), ((int)(((byte)(0)))));
-            this.UpdateBtn.Font = new System.Drawing.Font("Trebuchet MS", 14F);
-            this.UpdateBtn.Location = new System.Drawing.Point(267, 667);
-            this.UpdateBtn.Name = "UpdateBtn";
-            this.UpdateBtn.Size = new System.Drawing.Size(133, 43);
-            this.UpdateBtn.TabIndex = 35;
-            this.UpdateBtn.Text = "Update";
-            this.UpdateBtn.UseVisualStyleBackColor = false;
-            this.UpdateBtn.Click += new System.EventHandler(this.button2_Click);
+            this.DeleteBtn.Click += new System.EventHandler(this.DeleteBtn_Click);
             // 
             // SaveBtn
             // 
             this.SaveBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(123)))), ((int)(((byte)(192)))));
             this.SaveBtn.Font = new System.Drawing.Font("Trebuchet MS", 14F);
             this.SaveBtn.ForeColor = System.Drawing.Color.White;
-            this.SaveBtn.Location = new System.Drawing.Point(99, 667);
+            this.SaveBtn.Location = new System.Drawing.Point(99, 684);
             this.SaveBtn.Name = "SaveBtn";
-            this.SaveBtn.Size = new System.Drawing.Size(136, 43);
+            this.SaveBtn.Size = new System.Drawing.Size(136, 61);
             this.SaveBtn.TabIndex = 34;
             this.SaveBtn.Text = "Save";
             this.SaveBtn.UseVisualStyleBackColor = false;
@@ -270,6 +258,7 @@ namespace Mobile_Repairs_Management
             this.SpareCb.Name = "SpareCb";
             this.SpareCb.Size = new System.Drawing.Size(291, 34);
             this.SpareCb.TabIndex = 51;
+            this.SpareCb.SelectionChangeCommitted += new System.EventHandler(this.SpareCb_SelectionChangeCommitted);
             // 
             // label8
             // 
@@ -282,6 +271,7 @@ namespace Mobile_Repairs_Management
             // 
             // SpareCostTb
             // 
+            this.SpareCostTb.Enabled = false;
             this.SpareCostTb.Font = new System.Drawing.Font("Trebuchet MS", 13F);
             this.SpareCostTb.Location = new System.Drawing.Point(99, 628);
             this.SpareCostTb.Name = "SpareCostTb";
@@ -316,26 +306,26 @@ namespace Mobile_Repairs_Management
             // 
             // RepairsList
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.RepairsList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.RepairsList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.RepairsList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.RepairsList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.RepairsList.ColumnHeadersHeight = 25;
             this.RepairsList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.RepairsList.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.RepairsList.DefaultCellStyle = dataGridViewCellStyle3;
             this.RepairsList.GridColor = System.Drawing.Color.White;
             this.RepairsList.Location = new System.Drawing.Point(469, 132);
             this.RepairsList.Name = "RepairsList";
@@ -365,6 +355,7 @@ namespace Mobile_Repairs_Management
             this.RepairsList.ThemeStyle.RowsStyle.Height = 24;
             this.RepairsList.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(206)))), ((int)(((byte)(0)))));
             this.RepairsList.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.RepairsList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.RepairsList_CellContentClick);
             // 
             // Repairs
             // 
@@ -393,7 +384,6 @@ namespace Mobile_Repairs_Management
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.DeleteBtn);
-            this.Controls.Add(this.UpdateBtn);
             this.Controls.Add(this.SaveBtn);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -421,7 +411,6 @@ namespace Mobile_Repairs_Management
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button DeleteBtn;
-        private System.Windows.Forms.Button UpdateBtn;
         private System.Windows.Forms.Button SaveBtn;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
