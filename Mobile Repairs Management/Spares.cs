@@ -123,5 +123,12 @@ namespace Mobile_Repairs_Management
                 }
             }
         }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            Login obj = new Login();
+            obj.Show();
+            this.Hide();
+        }
     }
 }

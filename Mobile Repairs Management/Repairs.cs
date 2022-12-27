@@ -129,5 +129,19 @@ namespace Mobile_Repairs_Management
         {
             key = Convert.ToInt32(RepairsList.SelectedRows[0].Cells[0].Value.ToString());
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Customers obj = new Customers();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Spares obj = new Spares();
+            obj.Show();
+            this.Hide();
+        }
     }
 }
