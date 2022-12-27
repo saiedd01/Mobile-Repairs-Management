@@ -33,7 +33,7 @@ namespace Mobile_Repairs_Management
             this.panel1 = new System.Windows.Forms.Panel();
             this.Password = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.UserName = new System.Windows.Forms.TextBox();
+            this.Username = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.LoginBtn = new System.Windows.Forms.Button();
@@ -77,14 +77,14 @@ namespace Mobile_Repairs_Management
             this.label6.TabIndex = 50;
             this.label6.Text = "Password";
             // 
-            // UserName
+            // Username
             // 
-            this.UserName.Font = new System.Drawing.Font("Trebuchet MS", 13F);
-            this.UserName.Location = new System.Drawing.Point(393, 250);
-            this.UserName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.UserName.Name = "UserName";
-            this.UserName.Size = new System.Drawing.Size(343, 33);
-            this.UserName.TabIndex = 49;
+            this.Username.Font = new System.Drawing.Font("Trebuchet MS", 13F);
+            this.Username.Location = new System.Drawing.Point(393, 250);
+            this.Username.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.Username.Name = "Username";
+            this.Username.Size = new System.Drawing.Size(343, 33);
+            this.Username.TabIndex = 49;
             // 
             // label7
             // 
@@ -162,7 +162,7 @@ namespace Mobile_Repairs_Management
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Password);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.UserName);
+            this.Controls.Add(this.Username);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Trebuchet MS", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -185,7 +185,7 @@ namespace Mobile_Repairs_Management
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox Password;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox UserName;
+        private System.Windows.Forms.TextBox Username;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
