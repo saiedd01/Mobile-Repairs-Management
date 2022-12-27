@@ -130,5 +130,19 @@ namespace Mobile_Repairs_Management
             obj.Show();
             this.Hide();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Customers obj = new Customers();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            Repairs obj = new Repairs();
+            obj.Show();
+            this.Hide();
+        }
     }
 }
