@@ -31,40 +31,40 @@ namespace Mobile_Repairs_Management
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Repairs));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.DeleteBtn = new System.Windows.Forms.Button();
+            this.UpdateBtn = new System.Windows.Forms.Button();
+            this.SaveBtn = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.ProblemTb = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.ModelTb = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.DNameTb = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.PhoneTb = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.RepDateTb = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.CustCb = new System.Windows.Forms.ComboBox();
+            this.SpareCb = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.SpareCostTb = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.TotalTb = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
+            this.RepairsList = new Guna.UI2.WinForms.Guna2DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RepairsList)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -91,64 +91,12 @@ namespace Mobile_Repairs_Management
             // 
             this.guna2Elipse1.BorderRadius = 16;
             // 
-            // guna2DataGridView1
-            // 
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
-            this.guna2DataGridView1.ColumnHeadersHeight = 4;
-            this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle12;
-            this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(459, 132);
-            this.guna2DataGridView1.Name = "guna2DataGridView1";
-            this.guna2DataGridView1.RowHeadersVisible = false;
-            this.guna2DataGridView1.RowHeadersWidth = 51;
-            this.guna2DataGridView1.RowTemplate.Height = 24;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(936, 639);
-            this.guna2DataGridView1.TabIndex = 39;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 4;
-            this.guna2DataGridView1.ThemeStyle.ReadOnly = false;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 24;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(123)))), ((int)(((byte)(192)))));
             this.panel3.Location = new System.Drawing.Point(434, 132);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(10, 601);
+            this.panel3.Size = new System.Drawing.Size(10, 627);
             this.panel3.TabIndex = 38;
             // 
             // panel2
@@ -159,40 +107,41 @@ namespace Mobile_Repairs_Management
             this.panel2.Size = new System.Drawing.Size(1304, 10);
             this.panel2.TabIndex = 37;
             // 
-            // button3
+            // DeleteBtn
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(203)))), ((int)(((byte)(66)))));
-            this.button3.Font = new System.Drawing.Font("Trebuchet MS", 14F);
-            this.button3.Location = new System.Drawing.Point(173, 716);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(132, 43);
-            this.button3.TabIndex = 36;
-            this.button3.Text = "Delete";
-            this.button3.UseVisualStyleBackColor = false;
+            this.DeleteBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(203)))), ((int)(((byte)(66)))));
+            this.DeleteBtn.Font = new System.Drawing.Font("Trebuchet MS", 14F);
+            this.DeleteBtn.Location = new System.Drawing.Point(173, 716);
+            this.DeleteBtn.Name = "DeleteBtn";
+            this.DeleteBtn.Size = new System.Drawing.Size(132, 43);
+            this.DeleteBtn.TabIndex = 36;
+            this.DeleteBtn.Text = "Delete";
+            this.DeleteBtn.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // UpdateBtn
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(178)))), ((int)(((byte)(0)))));
-            this.button2.Font = new System.Drawing.Font("Trebuchet MS", 14F);
-            this.button2.Location = new System.Drawing.Point(267, 667);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(133, 43);
-            this.button2.TabIndex = 35;
-            this.button2.Text = "Update";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.UpdateBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(178)))), ((int)(((byte)(0)))));
+            this.UpdateBtn.Font = new System.Drawing.Font("Trebuchet MS", 14F);
+            this.UpdateBtn.Location = new System.Drawing.Point(267, 667);
+            this.UpdateBtn.Name = "UpdateBtn";
+            this.UpdateBtn.Size = new System.Drawing.Size(133, 43);
+            this.UpdateBtn.TabIndex = 35;
+            this.UpdateBtn.Text = "Update";
+            this.UpdateBtn.UseVisualStyleBackColor = false;
+            this.UpdateBtn.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button1
+            // SaveBtn
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(123)))), ((int)(((byte)(192)))));
-            this.button1.Font = new System.Drawing.Font("Trebuchet MS", 14F);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(99, 667);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(136, 43);
-            this.button1.TabIndex = 34;
-            this.button1.Text = "Save";
-            this.button1.UseVisualStyleBackColor = false;
+            this.SaveBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(123)))), ((int)(((byte)(192)))));
+            this.SaveBtn.Font = new System.Drawing.Font("Trebuchet MS", 14F);
+            this.SaveBtn.ForeColor = System.Drawing.Color.White;
+            this.SaveBtn.Location = new System.Drawing.Point(99, 667);
+            this.SaveBtn.Name = "SaveBtn";
+            this.SaveBtn.Size = new System.Drawing.Size(136, 43);
+            this.SaveBtn.TabIndex = 34;
+            this.SaveBtn.Text = "Save";
+            this.SaveBtn.UseVisualStyleBackColor = false;
+            this.SaveBtn.Click += new System.EventHandler(this.SaveBtn_Click);
             // 
             // label3
             // 
@@ -223,13 +172,13 @@ namespace Mobile_Repairs_Management
             this.label1.TabIndex = 29;
             this.label1.Text = "Mobile Repairs Management Systems";
             // 
-            // textBox3
+            // ProblemTb
             // 
-            this.textBox3.Font = new System.Drawing.Font("Trebuchet MS", 13F);
-            this.textBox3.Location = new System.Drawing.Point(109, 494);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(274, 33);
-            this.textBox3.TabIndex = 43;
+            this.ProblemTb.Font = new System.Drawing.Font("Trebuchet MS", 13F);
+            this.ProblemTb.Location = new System.Drawing.Point(109, 494);
+            this.ProblemTb.Name = "ProblemTb";
+            this.ProblemTb.Size = new System.Drawing.Size(291, 33);
+            this.ProblemTb.TabIndex = 43;
             // 
             // label4
             // 
@@ -240,13 +189,13 @@ namespace Mobile_Repairs_Management
             this.label4.TabIndex = 42;
             this.label4.Text = "Problem";
             // 
-            // textBox4
+            // ModelTb
             // 
-            this.textBox4.Font = new System.Drawing.Font("Trebuchet MS", 13F);
-            this.textBox4.Location = new System.Drawing.Point(109, 418);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(274, 33);
-            this.textBox4.TabIndex = 41;
+            this.ModelTb.Font = new System.Drawing.Font("Trebuchet MS", 13F);
+            this.ModelTb.Location = new System.Drawing.Point(109, 418);
+            this.ModelTb.Name = "ModelTb";
+            this.ModelTb.Size = new System.Drawing.Size(291, 33);
+            this.ModelTb.TabIndex = 41;
             // 
             // label5
             // 
@@ -257,13 +206,13 @@ namespace Mobile_Repairs_Management
             this.label5.TabIndex = 40;
             this.label5.Text = "Device Model";
             // 
-            // textBox5
+            // DNameTb
             // 
-            this.textBox5.Font = new System.Drawing.Font("Trebuchet MS", 13F);
-            this.textBox5.Location = new System.Drawing.Point(109, 351);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(274, 33);
-            this.textBox5.TabIndex = 47;
+            this.DNameTb.Font = new System.Drawing.Font("Trebuchet MS", 13F);
+            this.DNameTb.Location = new System.Drawing.Point(109, 351);
+            this.DNameTb.Name = "DNameTb";
+            this.DNameTb.Size = new System.Drawing.Size(291, 33);
+            this.DNameTb.TabIndex = 47;
             // 
             // label6
             // 
@@ -274,13 +223,13 @@ namespace Mobile_Repairs_Management
             this.label6.TabIndex = 46;
             this.label6.Text = "Device Name";
             // 
-            // textBox6
+            // PhoneTb
             // 
-            this.textBox6.Font = new System.Drawing.Font("Trebuchet MS", 13F);
-            this.textBox6.Location = new System.Drawing.Point(109, 276);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(274, 33);
-            this.textBox6.TabIndex = 45;
+            this.PhoneTb.Font = new System.Drawing.Font("Trebuchet MS", 13F);
+            this.PhoneTb.Location = new System.Drawing.Point(109, 276);
+            this.PhoneTb.Name = "PhoneTb";
+            this.PhoneTb.Size = new System.Drawing.Size(291, 33);
+            this.PhoneTb.TabIndex = 45;
             // 
             // label7
             // 
@@ -291,70 +240,70 @@ namespace Mobile_Repairs_Management
             this.label7.TabIndex = 44;
             this.label7.Text = "Phone Number";
             // 
-            // guna2DateTimePicker1
+            // RepDateTb
             // 
-            this.guna2DateTimePicker1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2DateTimePicker1.Checked = true;
-            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(178)))), ((int)(((byte)(0)))));
-            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(109, 132);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(274, 36);
-            this.guna2DateTimePicker1.TabIndex = 48;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2022, 12, 26, 23, 0, 48, 883);
+            this.RepDateTb.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.RepDateTb.Checked = true;
+            this.RepDateTb.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(178)))), ((int)(((byte)(0)))));
+            this.RepDateTb.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RepDateTb.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.RepDateTb.Location = new System.Drawing.Point(109, 132);
+            this.RepDateTb.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.RepDateTb.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.RepDateTb.Name = "RepDateTb";
+            this.RepDateTb.Size = new System.Drawing.Size(291, 36);
+            this.RepDateTb.TabIndex = 48;
+            this.RepDateTb.Value = new System.DateTime(2022, 12, 26, 23, 0, 0, 0);
             // 
-            // comboBox1
+            // CustCb
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(109, 207);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(274, 34);
-            this.comboBox1.TabIndex = 49;
+            this.CustCb.FormattingEnabled = true;
+            this.CustCb.Location = new System.Drawing.Point(109, 207);
+            this.CustCb.Name = "CustCb";
+            this.CustCb.Size = new System.Drawing.Size(291, 34);
+            this.CustCb.TabIndex = 49;
             // 
-            // comboBox2
+            // SpareCb
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(109, 560);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(274, 34);
-            this.comboBox2.TabIndex = 51;
+            this.SpareCb.FormattingEnabled = true;
+            this.SpareCb.Location = new System.Drawing.Point(109, 560);
+            this.SpareCb.Name = "SpareCb";
+            this.SpareCb.Size = new System.Drawing.Size(291, 34);
+            this.SpareCb.TabIndex = 51;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(104, 530);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(98, 26);
+            this.label8.Size = new System.Drawing.Size(63, 26);
             this.label8.TabIndex = 50;
-            this.label8.Text = "Customer";
+            this.label8.Text = "Spare";
             // 
-            // textBox1
+            // SpareCostTb
             // 
-            this.textBox1.Font = new System.Drawing.Font("Trebuchet MS", 13F);
-            this.textBox1.Location = new System.Drawing.Point(109, 628);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(126, 33);
-            this.textBox1.TabIndex = 53;
+            this.SpareCostTb.Font = new System.Drawing.Font("Trebuchet MS", 13F);
+            this.SpareCostTb.Location = new System.Drawing.Point(99, 628);
+            this.SpareCostTb.Name = "SpareCostTb";
+            this.SpareCostTb.Size = new System.Drawing.Size(136, 33);
+            this.SpareCostTb.TabIndex = 53;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(104, 599);
+            this.label9.Location = new System.Drawing.Point(94, 599);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(108, 26);
             this.label9.TabIndex = 52;
             this.label9.Text = "Spare Cost";
             // 
-            // textBox2
+            // TotalTb
             // 
-            this.textBox2.Font = new System.Drawing.Font("Trebuchet MS", 13F);
-            this.textBox2.Location = new System.Drawing.Point(267, 628);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(116, 33);
-            this.textBox2.TabIndex = 55;
+            this.TotalTb.Font = new System.Drawing.Font("Trebuchet MS", 13F);
+            this.TotalTb.Location = new System.Drawing.Point(267, 628);
+            this.TotalTb.Name = "TotalTb";
+            this.TotalTb.Size = new System.Drawing.Size(133, 33);
+            this.TotalTb.TabIndex = 55;
             // 
             // label10
             // 
@@ -365,35 +314,87 @@ namespace Mobile_Repairs_Management
             this.label10.TabIndex = 54;
             this.label10.Text = "Total cost";
             // 
+            // RepairsList
+            // 
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.RepairsList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.RepairsList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.RepairsList.ColumnHeadersHeight = 25;
+            this.RepairsList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.RepairsList.DefaultCellStyle = dataGridViewCellStyle6;
+            this.RepairsList.GridColor = System.Drawing.Color.White;
+            this.RepairsList.Location = new System.Drawing.Point(469, 132);
+            this.RepairsList.Name = "RepairsList";
+            this.RepairsList.RowHeadersVisible = false;
+            this.RepairsList.RowHeadersWidth = 51;
+            this.RepairsList.RowTemplate.Height = 24;
+            this.RepairsList.Size = new System.Drawing.Size(970, 627);
+            this.RepairsList.TabIndex = 56;
+            this.RepairsList.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(206)))), ((int)(((byte)(0)))));
+            this.RepairsList.ThemeStyle.AlternatingRowsStyle.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RepairsList.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.White;
+            this.RepairsList.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.RepairsList.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.RepairsList.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.RepairsList.ThemeStyle.GridColor = System.Drawing.Color.White;
+            this.RepairsList.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(123)))), ((int)(((byte)(192)))));
+            this.RepairsList.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.RepairsList.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RepairsList.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.GhostWhite;
+            this.RepairsList.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.RepairsList.ThemeStyle.HeaderStyle.Height = 25;
+            this.RepairsList.ThemeStyle.ReadOnly = false;
+            this.RepairsList.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(178)))), ((int)(((byte)(0)))));
+            this.RepairsList.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.RepairsList.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RepairsList.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
+            this.RepairsList.ThemeStyle.RowsStyle.Height = 24;
+            this.RepairsList.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(206)))), ((int)(((byte)(0)))));
+            this.RepairsList.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            // 
             // Repairs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1451, 786);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.RepairsList);
+            this.Controls.Add(this.TotalTb);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.SpareCostTb);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.SpareCb);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.guna2DateTimePicker1);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.CustCb);
+            this.Controls.Add(this.RepDateTb);
+            this.Controls.Add(this.DNameTb);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.PhoneTb);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.ProblemTb);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.ModelTb);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.guna2DataGridView1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.DeleteBtn);
+            this.Controls.Add(this.UpdateBtn);
+            this.Controls.Add(this.SaveBtn);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -406,7 +407,7 @@ namespace Mobile_Repairs_Management
             this.Load += new System.EventHandler(this.Repairs_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RepairsList)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -417,30 +418,30 @@ namespace Mobile_Repairs_Management
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
-        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button DeleteBtn;
+        private System.Windows.Forms.Button UpdateBtn;
+        private System.Windows.Forms.Button SaveBtn;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox ProblemTb;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox ModelTb;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox DNameTb;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox PhoneTb;
         private System.Windows.Forms.Label label7;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private Guna.UI2.WinForms.Guna2DateTimePicker RepDateTb;
+        private System.Windows.Forms.ComboBox CustCb;
+        private System.Windows.Forms.ComboBox SpareCb;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox SpareCostTb;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox TotalTb;
         private System.Windows.Forms.Label label10;
+        private Guna.UI2.WinForms.Guna2DataGridView RepairsList;
     }
 }
