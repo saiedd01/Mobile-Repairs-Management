@@ -18,6 +18,7 @@ namespace Mobile_Repairs_Management
             InitializeComponent();
             con = new Function();
             ShowRepairs();
+            GetCustomer();
         }
 
         private void ShowRepairs()
@@ -31,7 +32,8 @@ namespace Mobile_Repairs_Management
         {
             String Query = "Select * from CustomerTbl";
             CustCb.DisplayMember = con.GetData(Query).Columns["CustName"].ToString();
-            CustCb
+            CustCb.ValueMember = con.GetData(Query).Columns["CustCode"].ToString();
+            CustCb.DataSource = con.GetData(Query);
         }
         private void Repairs_Load(object sender, EventArgs e)
         {
