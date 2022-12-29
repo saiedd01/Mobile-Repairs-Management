@@ -84,7 +84,7 @@ namespace Mobile_Repairs_Management
                     int Spare = Convert.ToInt32(SpareCb.SelectedValue.ToString());
                     int Total = Convert.ToInt32(TotalTb.Text);
                     int GrdTotal = Convert.ToInt32(SpareCostTb.Text) + Total;
-                    string Query = "insert into repairTbl values ({0},{1},'{2}','{3}','{4}','{5}',{6},{7})";
+                    string Query = "insert into repairTbl values ('{0}',{1},'{2}','{3}','{4}','{5}',{6},{7})";
                     Query = string.Format(Query,RDate ,Customer, CPhone, DeviceName, DeviceModle, Problem, Spare, GrdTotal);
                     con.SetData(Query);
                     MessageBox.Show("Repair Add !!!!");
@@ -140,6 +140,13 @@ namespace Mobile_Repairs_Management
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             Spares obj = new Spares();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            Login obj = new Login();
             obj.Show();
             this.Hide();
         }
